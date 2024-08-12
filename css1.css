@@ -12,24 +12,11 @@ body{
     font-style: normal;
     line-height: 170%;
     vertical-align: baseline;
+    text-align: justify;
 }
 
 
 /* header */
-header{
-    width: 100%;
-    height: fit-content;
-    background-color: #4F9D9D;
-    display: block;
-    position: relative;
-    z-index: 11;
-}
-
-#header-text{
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
 
 
 /* section 共用 */
@@ -41,7 +28,9 @@ section{
 
 
 /* banner */
+
 #banner{
+    width: 100%;
     height: 650px;
     overflow: hidden;
     position: relative;
@@ -55,25 +44,25 @@ section{
     z-index: 10;
     display: flex;
     align-items: center;
+}
 
-    #logo{
-        width: 150px;
-        height: 100%;
-    }
+#logo{
+    width: 150px;
+    height: 100%;
 }
 
 .slogan h1{
     font-size: 5rem;
-    color: #fff;
     padding: 0.6rem;
+    color: #fff;
 }
 
 .slogan span{
-    color: #fff;
     padding: 0.6rem;
     position: relative;
     top: 25px;
     left: 4px;
+    color: #fff;
 }
 
 #banner-img{
@@ -104,6 +93,17 @@ section{
     }
 }
 
+/* guide */
+#guide{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#guide-pic{
+    width: 75%;
+}
+
 /* content */
 #content{
     position: relative;
@@ -118,7 +118,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding: 20px 0 10px 0;
 }
 
 .select-btn{
@@ -291,7 +291,7 @@ section{
     height: fit-content;
     margin: 25px auto 0 auto;
     padding: 40px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     background-color: #4F9D9D;
     color: #fff;
     display: flex;
@@ -303,10 +303,10 @@ section{
 }
 
 .info-title{
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     span{
-        width: 5rem;
+        width: 10vw;
         height: 0.5px;
         background-color: #fff;
         display: inline-block;
@@ -326,7 +326,7 @@ ol li {
     left: 20px;
 }
 
-.info-context{
+.info-text{
     margin: 0 50px 40px 50px;
 }
 
@@ -347,20 +347,81 @@ iframe{
     display: flex;
     flex-direction: column ;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #fb-link{
     text-align: center;
-    width: 250px;
-    border: 1px solid #ddd;
+    text-decoration: none;
+    width: 280px;
     border-radius: 30px;
     padding: 10px;
-    margin: 20px;
     display: block;
-    background-color: #ddd;
+    background-color: #fff;
     color: #000;
+    svg{
+        position: relative;
+        top:4px;
+        margin-right: 2px;
+    }
+    span{
+        position: relative;
+        top:-1px;
+    }
 }
 
-#fb-link:hover{
-    border: 1px solid #000;
+
+
+
+/* 作者頁 */
+.author-wrap{
+    width: 65%;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.author-left{
+    margin-right: 30px;
+}
+
+.author-text{
+    padding: 20px 0;
+    h1{
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+}
+
+#author-pic{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 39%;
+    border-radius: 20px;
+}
+
+/* IG */
+.IG-post{
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.copyright{
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    margin: 10px auto;
+    p{
+        font-size: 0.8rem;
+        color: #000;
+    }
 }
